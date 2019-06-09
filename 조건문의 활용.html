@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>조건문의 활용</title>
+  </head>
+  <body>
+    <h1><a href="보고서.html">보고서</a></h1><!--메인화면-->
+    <br>
+    <h1>조건문의 활용</h1>
+    <p>
+      <ul>
+        <li>
+          if와 else문을 사용, value값을 조건문을 걸어 특정한 명령어를 수행하게 한다.<br>
+          ex)<input id="red_blue" type="button" value="red" onclick="
+          if(document.querySelector('body').style.color === 'red'){
+          document.querySelector('body').style.color = 'blue';
+          document.querySelector('#red_blue').value = 'red';
+          } else{
+            document.querySelector('body').style.color = 'red';
+            document.querySelector('#red_blue').value = 'blue';
+          }
+          ">
+        </li>
+        <li>
+          input id="red_blue" type="button" value="red" onclick="<br>
+          if(document.querySelector('body').style.color === 'red'){
+                *<u>만약 텍스트 색이 'red'라면</u><br>
+          document.querySelector('body').style.color = 'blue';<br>
+          document.querySelector('#red_blue').value = 'red';
+                *<u>텍스트 색을 'blue'로 바꾸고 id값이 red_blue의 value값을 'red'로 변경한다</u><br>
+          else{      <u> *텍스트 색이 'red'가 아니라면</u><br>
+            document.querySelector('body').style.color = 'red';<br>
+            document.querySelector('#red_blue').value = 'blue';
+                *<u>텍스트 색을 'red'로 바꾸고 id값이 red_blue의 value값을 'blue'로 변경한다</u><br>
+          }
+        }
+        </li>
+      </ul>
+    </p>
+</body>
+</html>
